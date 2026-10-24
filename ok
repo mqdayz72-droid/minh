@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tập San Kỷ Niệm 60 Năm Thành Lập Trường THPT Minh Hà (1966 - 2026)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelSky: '#EBF4F6',
+                        pastelRose: '#FFF0F5',
+                        pastelBlue: '#D4EBF8',
+                        brandBlue: '#1E3E62',
+                        brandGold: '#D4AF37',
+                        softPink: '#FFD1DC',
+                        warmCream: '#FFFDF9',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        handwriting: ['"Caveat"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #1E3E62 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(235, 244, 246, 0.7) 0%, rgba(255, 240, 245, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-warmCream text-slate-800 font-sans antialiased selection:bg-rose-200 selection:text-slate-900">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card shadow-sm border-b border-rose-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-sky-400 to-rose-300 p-0.5 shadow-sm group-hover:scale-105 transition">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center text-brandBlue font-serif font-bold text-lg">
+                        MH
+                    </div>
+                </div>
+                <div>
+                    <span class="block font-serif font-bold text-lg text-brandBlue leading-tight">THPT MINH HÀ</span>
+                    <span class="block text-[11px] font-semibold text-amber-600 tracking-wider uppercase">1966 - 2026 • 60 NĂM</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+                <a href="#loi-ngo" class="hover:text-amber-600 transition">Lời Ngỏ</a>
+                <a href="#lich-su" class="hover:text-amber-600 transition">Dấu Ấn Lịch Sử</a>
+                <a href="#thu-vien" class="hover:text-amber-600 transition">Thư Viện Ảnh</a>
+                <a href="#minigame" class="hover:text-amber-600 transition">Vé Thanh Xuân</a>
+                <a href="#so-luu-niem" class="hover:text-amber-600 transition">Sổ Lưu Niệm</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#minigame" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-sky-400 via-rose-300 to-amber-300 text-slate-800 font-semibold text-xs tracking-wide shadow-md hover:shadow-lg hover:scale-105 transition">
+                <i class="fa-solid fa-ticket"></i>
+                <span>Nhận Vé Thanh Xuân</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION / BANNER -->
+    <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-32 hero-bg overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10 space-y-6">
+            <!-- Badges -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-amber-200/80 text-amber-700 text-xs font-semibold shadow-sm backdrop-blur-md">
+                <i class="fa-solid fa-sparkles text-amber-500"></i>
+                <span>Tập San Điện Tử Kỷ Niệm 60 Năm Thành Lập Trường</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="font-serif font-extrabold text-3xl sm:text-5xl lg:text-6xl text-brandBlue leading-tight tracking-tight">
+                HÀNH TRÌNH 6 THẬP KỶ<br>
+                <span class="gradient-text font-serif italic font-normal">Vun Đắp Tri Thức & Khát Vọng</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-slate-600 text-sm sm:text-base leading-relaxed font-light">
+                Chào mừng các thế hệ thầy cô giáo và học sinh về lại mái trường THPT Minh Hà thân yêu (1966 - 2026). Nơi lưu giữ thanh xuân, hoài niệm và những ân tình sâu sắc.
+            </p>
+
+            <!-- Decorative Logo Box -->
+            <div class="pt-6 flex justify-center items-center gap-6 sm:gap-12">
+                <!-- Logo 1: School Logo Placeholder -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white p-2 shadow-xl border-2 border-sky-200 flex items-center justify-center">
+                        <i class="fa-solid fa-school text-3xl sm:text-4xl text-brandBlue"></i>
+                    </div>
+                    <span class="text-xs font-bold text-slate-600 mt-2">THPT MINH HÀ</span>
+                </div>
+
+                <div class="text-amber-400 font-handwriting text-3xl font-bold">♥</div>
+
+                <!-- Logo 2: 60th Anniversary Logo -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-amber-200 via-rose-200 to-sky-200 p-1 shadow-xl border-2 border-amber-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <span class="block font-serif font-extrabold text-2xl text-brandBlue leading-none">60</span>
+                            <span class="block text-[9px] font-bold text-amber-700 tracking-tighter">1966 - 2026</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-amber-700 mt-2">KỶ NIỆM 60 NĂM</span>
+                </div>
+            </div>
+
+            <div class="pt-8 flex justify-center gap-4">
+                <a href="#loi-ngo" class="px-6 py-3 rounded-full bg-brandBlue text-white font-medium text-xs tracking-wider shadow-md hover:bg-slate-800 transition flex items-center gap-2">
+                    <span>Đọc Lời Ngỏ</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: LỜI NGỎ TỪ BAN GIÁM HIỆU -->
+    <section id="loi-ngo" class="py-20 bg-gradient-to-b from-warmCream via-pastelRose/30 to-warmCream">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl shadow-xl relative border border-rose-100/80">
+                <!-- Quote icon -->
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-amber-300 text-brandBlue rounded-full flex items-center justify-center text-xl shadow-md">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <div class="text-center space-y-3 mb-8 pt-2">
+                    <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Thông Điệp Tri Ân</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-brandBlue">Lời Ngỏ Từ Ban Giám Hiệu</h2>
+                    <div class="w-16 h-0.5 bg-amber-400 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed text-justify font-light">
+                    <p>
+                        <span class="font-bold text-brandBlue">Kính gửi các thế hệ Thầy Cô giáo, Cựu học sinh và các em học sinh THPT Minh Hà thân yêu!</span>
+                    </p>
+                    <p>
+                        Sáu mươi năm - một chặng đường chưa dài so với lịch sử, nhưng đối với mái trường THPT Minh Hà (Quảng Ninh), đó là cả một hành trình tự hào dựng xây, trưởng thành và cống hiến. Từ những ngày đầu thành lập gian khó năm 1966 dưới mái tranh vách đát, thầy và trò nhà trường đã vượt qua muôn vàn thử thách để thắp sáng ngọn lửa tri thức.
+                    </p>
+                    <p>
+                        Năm 2026 đánh dấu mốc son vàng 60 năm. Tập san điện tử này là món quà tri ân chân thành gửi tới những người đã và đang viết nên trang sử vẻ vang của nhà trường. Dù bạn ở đâu, làm gì, THPT Minh Hà vẫn luôn là ngôi nhà chung ấm áp dang tay đón bạn trở về.
+                    </p>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-rose-100 flex items-center justify-between">
+                    <div>
+                        <h4 class="font-serif font-bold text-brandBlue text-base">BAN GIÁM HIỆU</h4>
+                        <p class="text-xs text-slate-500">Trường THPT Minh Hà - Quảng Ninh</p>
+                    </div>
+                    <div class="font-handwriting text-3xl text-amber-600 font-bold">
+                        Minh Hà 2026
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: DÒNG THỜI GIAN LỊCH SỬ (TIMELINE) -->
+    <section id="lich-su" class="py-20 bg-pastelSky/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Hành Trình Đổi Mới</span>
+                <h2 class="font-serif text-3xl font-bold text-brandBlue">Dấu Ấn Lịch Sử (1966 - 2026)</h2>
+                <p class="text-xs sm:text-sm text-slate-600">Những mốc son chói lọi đánh dấu sự phát triển của Trường THPT Minh Hà</p>
+            </div>
+
+            <!-- Timeline items -->
+            <div class="relative border-l-2 border-sky-300 ml-4 sm:ml-32 space-y-12">
+                
+                <!-- Timeline 1 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-white border-4 border-sky-400 flex items-center justify-center text-xs text-sky-600 shadow-md">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="hidden sm:block absolute -left-28 top-0 text-sm font-bold text-brandBlue font-serif">1966</div>
+                    <div class="glass-card p-6 rounded-2xl shadow-sm border border-sky-100 hover:shadow-md transition">
+                        <span class="sm:hidden inline-block px-2.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-bold mb-2">Năm 1966</span>
+                        <h3 class="font-serif font-bold text-lg text-brandBlue">Thành Lập Trong Gian Khó</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Trường cấp III Minh Hà chính thức được thành lập giữa những năm tháng chiến tranh chống Mỹ ác liệt, đáp ứng khát vọng học tập của con em nhân dân vùng đảo Quảng Yên.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline 2 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-white border-4 border-amber-400 flex items-center justify-center text-xs text-amber-600 shadow-md">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <div class="hidden sm:block absolute -left-28 top-0 text-sm font-bold text-brandBlue font-serif">1990 - 2010</div>
+                    <div class="glass-card p-6 rounded-2xl shadow-sm border border-amber-100 hover:shadow-md transition">
+                        <span class="sm:hidden inline-block px-2.5 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-bold mb-2">1990 - 2010</span>
+                        <h3 class="font-serif font-bold text-lg text-brandBlue">Xây Dựng & Kiên Cố Hóa</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Nhà trường từng bước hiện đại hóa cơ sở vật chất, xây dựng các dãy nhà cao tầng khang trang, phòng thí nghiệm đạt chuẩn và nâng cao chất lượng đội ngũ giáo viên.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline 3 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-white border-4 border-rose-400 flex items-center justify-center text-xs text-rose-600 shadow-md">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="hidden sm:block absolute -left-28 top-0 text-sm font-bold text-brandBlue font-serif">2026</div>
+                    <div class="glass-card p-6 rounded-2xl shadow-sm border border-rose-100 hover:shadow-md transition bg-gradient-to-br from-white to-rose-50/50">
+                        <span class="sm:hidden inline-block px-2.5 py-0.5 rounded bg-rose-100 text-rose-800 text-xs font-bold mb-2">Năm 2026</span>
+                        <h3 class="font-serif font-bold text-lg text-brandBlue">Rạng Rỡ Mốc Son 60 Năm</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Trường THPT Minh Hà khẳng định vị thế là một trong những lá cờ đầu của giáo dục địa phương, vững bước tiến vào kỷ nguyên số với ngọn lửa tri thức không bao giờ tắt.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THƯ VIỆN ẢNH THANH XUÂN (GALLERY) -->
+    <section id="thu-vien" class="py-20 bg-warmCream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Ký Ức Đẹp</span>
+                <h2 class="font-serif text-3xl font-bold text-brandBlue">Góc Thanh Xuân Minh Hà</h2>
+                <p class="text-xs sm:text-sm text-slate-600">Những khoảnh khắc giản dị mà đong đầy cảm xúc học trò</p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-rose-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="Sân trường" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-4 bg-white">
+                        <span class="text-[10px] font-bold text-amber-600 uppercase">Khuôn Viên</span>
+                        <h4 class="font-serif font-bold text-slate-800 text-sm">Góc sân trường ngợp nắng thu</h4>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-rose-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" alt="Lớp học" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-4 bg-white">
+                        <span class="text-[10px] font-bold text-sky-600 uppercase">Học Tập</span>
+                        <h4 class="font-serif font-bold text-slate-800 text-sm">Giờ giảng bài hăng say</h4>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-sm border border-rose-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop" alt="Hoạt động" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-4 bg-white">
+                        <span class="text-[10px] font-bold text-rose-600 uppercase">Ngoại Khóa</span>
+                        <h4 class="font-serif font-bold text-slate-800 text-sm">Nụ cười tươi rạng rỡ tuổi 17</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE MINIGAME QUIZ -->
+    <section id="minigame" class="py-20 bg-gradient-to-b from-pastelRose/40 via-pastelSky/40 to-warmCream">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Góc Tương Tác</span>
+                <h2 class="font-serif text-3xl font-bold text-brandBlue">Thử Thách: Hành Trình 60 Năm</h2>
+                <p class="text-xs sm:text-sm text-slate-600">Trả lời 5 câu hỏi nhanh để nhận **Tấm Vé Thanh Xuân** cá nhân hóa độc quyền!</p>
+            </div>
+
+            <!-- Quiz Game Box Container -->
+            <div class="bg-white/90 rounded-3xl shadow-xl border-2 border-amber-200/80 p-6 sm:p-10 relative overflow-hidden backdrop-blur-md">
+                
+                <!-- Background decorative element -->
+                <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-rose-100/60 rounded-full blur-2xl pointer-events-none"></div>
+
+                <!-- STEP 1: REGISTRATION -->
+                <div id="quizWelcome" class="space-y-5">
+                    <div class="text-center space-y-2">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl mx-auto">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-brandBlue">Nhập Thông Tin Của Bạn</h3>
+                        <p class="text-xs text-slate-500">Tên và lớp của bạn sẽ được in trực tiếp lên Tấm Vé Thanh Xuân kỷ niệm.</p>
+                    </div>
+
+                    <div class="space-y-3 max-w-md mx-auto">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên:</label>
+                            <input type="text" id="quizUserName" placeholder="Nguyễn Văn A" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-300">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Lớp / Niên khóa / Cựu HS:</label>
+                            <input type="text" id="quizUserClass" placeholder="12A1 (Niên khóa 2023 - 2026)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-300">
+                        </div>
+                    </div>
+
+                    <button onclick="startQuizGame()" class="w-full max-w-md mx-auto block py-3 rounded-xl bg-gradient-to-r from-amber-400 to-rose-300 hover:from-amber-500 hover:to-rose-400 text-slate-900 font-bold text-sm tracking-wide shadow-md transition">
+                        Bắt Đầu Giải Đố <i class="fa-solid fa-play ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- STEP 2: QUESTIONS -->
+                <div id="quizQuestions" class="hidden space-y-6">
+                    <div class="flex justify-between items-center text-xs font-bold text-slate-500 border-b border-slate-100 pb-3">
+                        <span id="quizCounter" class="text-amber-600">Câu hỏi 1 / 5</span>
+                        <span id="quizScore" class="bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Điểm: 0</span>
+                    </div>
+
+                    <h3 id="quizQuestionText" class="font-serif font-bold text-lg text-brandBlue min-h-[50px]">
+                        Nội dung câu hỏi...
+                    </h3>
+
+                    <div id="quizOptions" class="space-y-2.5">
+                        <!-- Options injected via JS -->
+                    </div>
+
+                    <div id="quizExplanation" class="hidden p-3.5 rounded-xl bg-sky-50 border border-sky-100 text-xs text-sky-800">
+                        <span class="font-bold"><i class="fa-solid fa-lightbulb"></i> Bạn có biết: </span>
+                        <span id="quizExplanationText"></span>
+                    </div>
+
+                    <button id="quizNextBtn" onclick="nextQuizQuestion()" class="hidden w-full py-3 rounded-xl bg-brandBlue text-white font-bold text-xs uppercase tracking-wider hover:bg-slate-800 transition">
+                        Câu Hỏi Tiếp Theo <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- STEP 3: TẤM VÉ THANH XUÂN RESULT -->
+                <div id="quizResult" class="hidden space-y-6 text-center">
+                    <div class="space-y-1">
+                        <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">Hoàn Thành Thử Thách!</span>
+                        <h3 class="font-serif font-bold text-2xl text-brandBlue">Tấm Vé Thanh Xuân Dành Cho Bạn</h3>
+                    </div>
+
+                    <!-- TICKET DESIGN -->
+                    <div id="youthTicketCard" class="bg-gradient-to-r from-warmCream via-rose-50 to-sky-50 border-2 border-amber-300 rounded-2xl p-6 shadow-lg text-left relative overflow-hidden max-w-lg mx-auto">
+                        <!-- Ticket Punch Notches -->
+                        <div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full border-r-2 border-amber-300"></div>
+                        <div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full border-l-2 border-amber-300"></div>
+
+                        <div class="flex justify-between items-start border-b border-dashed border-slate-300 pb-3">
+                            <div>
+                                <span class="text-[9px] font-extrabold uppercase bg-brandBlue text-amber-300 px-2 py-0.5 rounded">THPT MINH HÀ 60 NĂM</span>
+                                <h4 class="font-serif font-bold text-base text-slate-800 mt-1">VÉ VỀ THANH XUÂN</h4>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[10px] text-slate-400 block">MÃ VÉ</span>
+                                <span id="ticketCode" class="font-mono text-xs font-bold text-amber-600">MH-2026</span>
+                            </div>
+                        </div>
+
+                        <div class="py-4 space-y-2 text-xs">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div>
+                                    <span class="text-slate-400 text-[10px] block uppercase">Họ và tên:</span>
+                                    <span id="ticketNameDisplay" class="font-bold text-slate-800 text-sm">--</span>
+                                </div>
+                                <div>
+                                    <span class="text-slate-400 text-[10px] block uppercase">Lớp / Niên khóa:</span>
+                                    <span id="ticketClassDisplay" class="font-bold text-slate-800 text-sm">--</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 text-[10px] block uppercase">Thông điệp ý nghĩa:</span>
+                                <p id="ticketWishDisplay" class="font-serif italic text-brandBlue bg-white/80 p-2.5 rounded-lg border border-amber-200 mt-1 text-xs leading-relaxed">
+                                    "--"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[10px] text-slate-500 font-medium">
+                            <span>1966 - 2026 • 60 Năm Tự Hào</span>
+                            <span class="text-amber-600 font-bold">#MinhHa60Nam</span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center gap-3">
+                        <button onclick="resetQuizGame()" class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 text-xs font-bold hover:bg-slate-50 transition">
+                            <i class="fa-solid fa-rotate-right"></i> Chơi Lại
+                        </button>
+                        <button onclick="alert('Bạn hãy chụp lại màn hình (Screenshot) tấm vé này để lưu làm kỷ niệm nhé!')" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 text-xs font-bold shadow transition">
+                            <i class="fa-solid fa-camera"></i> Chụp Màn Hình Vé
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SỔ LƯU NIỆM ĐIỆN TỬ (GUESTBOOK) -->
+    <section id="so-luu-niem" class="py-20 bg-warmCream">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Gửi Gắm Yêu Thương</span>
+                <h2 class="font-serif text-3xl font-bold text-brandBlue">Sổ Lưu Niệm Điện Tử</h2>
+                <p class="text-xs sm:text-sm text-slate-600">Nơi các thế hệ thầy cô và cựu học sinh để lại lời chúc mừng 60 năm</p>
+            </div>
+
+            <!-- Comment Form -->
+            <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-sm border border-rose-100 mb-10">
+                <form id="guestbookForm" onsubmit="handleGuestbookSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Tên của bạn:</label>
+                            <input type="text" id="gbName" required placeholder="Ví dụ: Nguyễn Thị Mai" class="w-full px-4 py-2 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-300">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Khóa học / Lớp / Chức danh:</label>
+                            <input type="text" id="gbRole" required placeholder="Cựu học sinh K35 (2000-2003)" class="w-full px-4 py-2 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-300">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Lời nhắn / Kỷ niệm gửi trường:</label>
+                        <textarea id="gbMessage" required rows="3" placeholder="Nhập lời chúc mừng kỷ niệm 60 năm thành lập trường..." class="w-full px-4 py-2 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-300"></textarea>
+                    </div>
+                    <button type="submit" class="px-6 py-2.5 rounded-full bg-brandBlue text-white text-xs font-bold tracking-wider hover:bg-slate-800 transition">
+                        Gửi Lời Nhắn <i class="fa-solid fa-paper-plane ml-1"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Messages List -->
+            <div id="guestbookList" class="space-y-4">
+                <!-- Static sample message 1 -->
+                <div class="glass-card p-5 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h4 class="font-serif font-bold text-brandBlue text-sm">Thầy Trần Văn Bình</h4>
+                            <span class="text-[10px] text-amber-600 font-semibold">Cựu Giáo Viên Ngữ Văn</span>
+                        </div>
+                        <span class="text-[10px] text-slate-400">Vừa xong</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+                        "Chúc mừng kỷ niệm 60 năm Trường THPT Minh Hà! Tự hào khi thấy mái trường xưa nay đã khang trang và phát triển rực rỡ."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandBlue text-white pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 border-b border-slate-700/60">
+            <!-- Col 1 -->
+            <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-white text-brandBlue font-serif font-bold flex items-center justify-center text-base">
+                        MH
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-amber-300">THPT MINH HÀ</h3>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed font-light">
+                    Trường THPT Minh Hà - 60 Năm Tự Hào Truyền Thống, Vững Bước Tương Lai (1966 - 2026).
+                </p>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="space-y-2 text-xs text-slate-300">
+                <h4 class="font-serif font-bold text-sm text-white mb-3">Thông Tin Liên Hệ</h4>
+                <p><i class="fa-solid fa-location-dot text-amber-400 mr-2"></i> Xã Cẩm La, Thị xã Quảng Yên, Tỉnh Quảng Ninh</p>
+                <p><i class="fa-solid fa-phone text-amber-400 mr-2"></i> (0203) 3881 xxx</p>
+                <p><i class="fa-solid fa-envelope text-amber-400 mr-2"></i> thptminhha.qn@gmail.com</p>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="space-y-2 text-xs text-slate-300">
+                <h4 class="font-serif font-bold text-sm text-white mb-3">Tập San Điện Tử</h4>
+                <p>Mọi góp ý và bài viết đóng góp cho nội dung tập san xin gửi về địa chỉ email Ban Biên Tập.</p>
+                <div class="pt-2 flex gap-3 text-base">
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-amber-400 hover:text-slate-900 transition flex items-center justify-center"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-amber-400 hover:text-slate-900 transition flex items-center justify-center"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 text-center text-[11px] text-slate-400">
+            © 1966 - 2026 Trường THPT Minh Hà - Quảng Ninh. Tất cả quyền được bảo lưu.
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // MINIGAME QUIZ LOGIC
+        const quizQuestionsData = [
+            {
+                q: "Trường THPT Minh Hà được thành lập vào năm nào?",
+                opts: ["1956", "1966", "1976", "1986"],
+                correct: 1,
+                exp: "Trường được thành lập vào năm 1966 nhằm đáp ứng nhu cầu học tập của con em nhân dân vùng đảo Hà Nam, thị xã Quảng Yên."
+            },
+            {
+                q: "Trường THPT Minh Hà vinh dự mang tên bí danh của vị anh hùng nào?",
+                opts: ["Anh hùng Đỗ Thị Sinh", "Anh hùng Võ Thị Sáu", "Anh hùng Lý Tự Trọng", "Anh hùng Nguyễn Văn Trỗi"],
+                correct: 0,
+                exp: "Trường mang tên Anh hùng liệt sĩ Đỗ Thị Sinh (bí danh Minh Hà) - người cán bộ kiên trung anh dũng hy sinh tại vùng đất này."
+            },
+            {
+                q: "Trường THPT Minh Hà hiện nay thuộc địa bàn nào của Quảng Ninh?",
+                opts: ["TP. Hạ Long", "Xã Cẩm La, Thị xã Quảng Yên", "TP. Uông Bí", "Huyện Tiên Yên"],
+                correct: 1,
+                exp: "Trường tọa lạc khang trang tại Xã Cẩm La, Thị xã Quảng Yên, Tỉnh Quảng Ninh."
+            },
+            {
+                q: "Năm 2026 đánh dấu mốc kỷ niệm bao nhiêu năm thành lập Trường THPT Minh Hà?",
+                opts: ["40 năm", "50 năm", "60 năm", "70 năm"],
+                correct: 2,
+                exp: "Năm 2026 đánh dấu mốc son 60 năm lịch sử tự hào của nhà trường (1966 - 2026)."
+            },
+            {
+                q: "Phương châm nổi bật nối tiếp truyền thống 60 năm của THPT Minh Hà là gì?",
+                opts: ["Tự hào truyền thống - Vững bước tương lai", "Học đi đôi với hành", "Đoàn kết - Đổi mới - Sáng tạo", "Tất cả các ý trên đều đúng"],
+                correct: 3,
+                exp: "Tất cả các giá trị trên đều là nền tảng vững chắc làm nên sức mạnh của các thế hệ học sinh Minh Hà!"
+            }
+        ];
+
+        const luckyWishes = [
+            "Chúc bạn luôn giữ mãi ngọn lửa nhiệt huyết và gặt hái thật nhiều thành công!",
+            "Dù đi đâu về đâu, THPT Minh Hà vẫn luôn là bến đỗ bình yên trong tim bạn.",
+            "Chúc bạn luôn tỏa sáng rực rỡ như tinh thần tự hào của học sinh Minh Hà!",
+            "Chúc bạn luôn giữ được nụ cười trong trẻo của tuổi học trò dưới mái trường mến yêu!"
+        ];
+
+        let currentQIndex = 0;
+        let userScore = 0;
+        let playerInfo = { name: '', classStr: '' };
+
+        function startQuizGame() {
+            const name = document.getElementById('quizUserName').value.trim();
+            const classStr = document.getElementById('quizUserClass').value.trim();
+
+            if (!name || !classStr) {
+                alert('Vui lòng điền đầy đủ Họ tên và Lớp/Khóa để tiếp tục!');
+                return;
+            }
+
+            playerInfo.name = name;
+            playerInfo.classStr = classStr;
+
+            document.getElementById('quizWelcome').classList.add('hidden');
+            document.getElementById('quizQuestions').classList.remove('hidden');
+
+            loadQuizQuestion();
+        }
+
+        function loadQuizQuestion() {
+            const currentQ = quizQuestionsData[currentQIndex];
+            document.getElementById('quizCounter').innerText = `Câu hỏi ${currentQIndex + 1} / ${quizQuestionsData.length}`;
+            document.getElementById('quizScore').innerText = `Điểm: ${userScore}`;
+            document.getElementById('quizQuestionText').innerText = currentQ.q;
+
+            const optsBox = document.getElementById('quizOptions');
+            optsBox.innerHTML = '';
+
+            currentQ.opts.forEach((optText, i) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-3 rounded-xl border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs sm:text-sm text-slate-700 font-medium transition flex items-center justify-between";
+                btn.onclick = () => handleQuizAnswer(i);
+                btn.innerHTML = `<span>${optText}</span><i class="fa-regular fa-circle text-slate-300"></i>`;
+                optsBox.appendChild(btn);
+            });
+
+            document.getElementById('quizExplanation').classList.add('hidden');
+            document.getElementById('quizNextBtn').classList.add('hidden');
+        }
+
+        function handleQuizAnswer(selectedIdx) {
+            const currentQ = quizQuestionsData[currentQIndex];
+            const optsBox = document.getElementById('quizOptions');
+            const btns = optsBox.getElementsByTagName('button');
+
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].disabled = true;
+                if (i === currentQ.correct) {
+                    btns[i].className = "w-full text-left p-3 rounded-xl border border-emerald-500 bg-emerald-50 text-xs sm:text-sm text-emerald-800 font-bold transition flex items-center justify-between";
+                } else if (i === selectedIdx) {
+                    btns[i].className = "w-full text-left p-3 rounded-xl border border-rose-400 bg-rose-50 text-xs sm:text-sm text-rose-700 transition flex items-center justify-between";
+                }
+            }
+
+            if (selectedIdx === currentQ.correct) {
+                userScore += 20;
+            }
+
+            document.getElementById('quizExplanationText').innerText = currentQ.exp;
+            document.getElementById('quizExplanation').classList.remove('hidden');
+            document.getElementById('quizNextBtn').classList.remove('hidden');
+        }
+
+        function nextQuizQuestion() {
+            currentQIndex++;
+            if (currentQIndex < quizQuestionsData.length) {
+                loadQuizQuestion();
+            } else {
+                finishQuizGame();
+            }
+        }
+
+        function finishQuizGame() {
+            document.getElementById('quizQuestions').classList.add('hidden');
+            document.getElementById('quizResult').classList.remove('hidden');
+
+            document.getElementById('ticketNameDisplay').innerText = playerInfo.name;
+            document.getElementById('ticketClassDisplay').innerText = playerInfo.classStr;
+            document.getElementById('ticketCode').innerText = `MH-${Math.floor(1000 + Math.random() * 9000)}`;
+
+            const randomWish = luckyWishes[Math.floor(Math.random() * luckyWishes.length)];
+            document.getElementById('ticketWishDisplay').innerText = `"${randomWish}"`;
+
+            confetti({ particleCount: 80, spread: 60, origin: { y: 0.6 } });
+        }
+
+        function resetQuizGame() {
+            currentQIndex = 0;
+            userScore = 0;
+            document.getElementById('quizResult').classList.add('hidden');
+            document.getElementById('quizWelcome').classList.remove('hidden');
+        }
+
+        // GUESTBOOK FORM HANDLER
+        function handleGuestbookSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('gbName').value.trim();
+            const role = document.getElementById('gbRole').value.trim();
+            const msg = document.getElementById('gbMessage').value.trim();
+
+            if (!name || !role || !msg) return;
+
+            const list = document.getElementById('guestbookList');
+            const newCard = document.createElement('div');
+            newCard.className = "glass-card p-5 rounded-2xl shadow-sm border border-slate-100 animate-fade-in";
+            newCard.innerHTML = `
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h4 class="font-serif font-bold text-brandBlue text-sm">${name}</h4>
+                        <span class="text-[10px] text-amber-600 font-semibold">${role}</span>
+                    </div>
+                    <span class="text-[10px] text-slate-400">Vừa xong</span>
+                </div>
+                <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">"${msg}"</p>
+            `;
+
+            list.prepend(newCard);
+            document.getElementById('guestbookForm').reset();
+            alert('Cảm ơn bạn đã gửi lời nhắn tới Sổ lưu niệm Trường THPT Minh Hà!');
+        }
+    </script>
+</body>
+</html>
